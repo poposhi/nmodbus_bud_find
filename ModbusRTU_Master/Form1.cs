@@ -90,7 +90,7 @@ namespace ModbusRTU_Master
                 ushort[] data1, data2, switchh = new ushort[7];
                 //switchh = master.ReadHoldingRegisters(id, 1000, 2);
                 
-                
+              
                 Thread ThreadAFC_rtu = new Thread(new ThreadStart(test_thread_modbus));
                 ThreadAFC_rtu.Start();
                 
